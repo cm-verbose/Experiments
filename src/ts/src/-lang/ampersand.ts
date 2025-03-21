@@ -1,5 +1,6 @@
 // (typescript)
 // The ampersand operator (&) can be used with TypeScript types to
+// create intersection types.
 
 interface A {
   fieldA: number;
