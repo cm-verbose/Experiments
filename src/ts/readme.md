@@ -1,4 +1,4 @@
-# Typescript 
+# TypeScript 
 
 This directory includes experimenting with TypeScript. 
 
@@ -6,10 +6,13 @@ This directory includes experimenting with TypeScript.
 
 ### Language features 
 
-#### Typescript 
+#### TypeScript 
 
+- `&` (with types)
 - `asserts ... is ...` 
+- `... implements ...`
 - `... is ...`
+- `... keyof ...`
 
 ### Function
 

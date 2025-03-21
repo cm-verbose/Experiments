@@ -1,7 +1,8 @@
 // (typescript)
 // The asserts keyword is used in functions or methods that want to narrow
-// a certain type to another type. Its syntax is :
+// a certain type to another type.
 //
+// Syntax: 
 // asssert parameter_name is type
 
 /**
@@ -20,6 +21,6 @@ function assertValidNumber<T extends Number>(
   }
 }
 
-assertValidNumber(1); 
+assertValidNumber(1);
 
-export {}; 
+export {};

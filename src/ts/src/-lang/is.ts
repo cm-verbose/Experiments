@@ -1,6 +1,7 @@
 // (typescript)
-// The is keyword defines a user-defined type guard. Its syntax is the following :
+// The is keyword defines a user-defined type guard.
 //
+// Syntax: 
 // parameter_name is type
 
 class Car {
@@ -22,4 +23,4 @@ function isCar(possibleCar: unknown): possibleCar is Car {
   );
 }
 
-export {}; 
+export {};
