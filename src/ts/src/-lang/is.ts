@@ -1,7 +1,7 @@
 // (typescript)
 // The is keyword defines a user-defined type guard.
 //
-// Syntax: 
+// Syntax:
 // parameter_name is type
 
 class Car {

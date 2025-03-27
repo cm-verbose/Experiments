@@ -2,7 +2,7 @@
 // The asserts keyword is used in functions or methods that want to narrow
 // a certain type to another type.
 //
-// Syntax: 
+// Syntax:
 // asssert parameter_name is type
 
 /**

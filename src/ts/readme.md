@@ -14,9 +14,17 @@ This directory includes experimenting with TypeScript.
 - `... is ...`
 - `... keyof ...`
 
+### Array 
+
+- `Array.prototype[Symbol.iterator]()`
+
 ### Function
 
 - `Function.prototype[Symbol.hasInstance]()`
+
+### Symbol 
+
+- `Symbol.iterator`
 
 ### SyntaxError 
 - `SyntaxError`

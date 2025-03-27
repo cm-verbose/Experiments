@@ -12,7 +12,7 @@ class Car {
   }
 
   /**
-   * This static method changes the behaviour of the following operation :
+   * This static method changes the behavior of the following operation :
    * F instanceof V
    *
    * where :
@@ -32,7 +32,7 @@ const car_instance = new Car({ wheels: 15 });
 
 // This expression returns false as we have overwritten the instanceof
 // operation on this class. This is because the number of wheels doesn't
-// satisfy our our defined condition.
+// satisfy our defined condition.
 console.log(car_instance instanceof Car);
 
 export {};

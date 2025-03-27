@@ -21,4 +21,5 @@ class Car implements Vehicle {
 
 const car = new Car(3);
 console.log(car.wheels); // -> 3
+
 export {};

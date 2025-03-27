@@ -20,3 +20,5 @@ type C = A & B;
 // }
 //
 // Or, as the union of both intefaces
+
+export {};
