@@ -22,6 +22,10 @@ This directory includes experimenting with TypeScript.
 
 - `Function.prototype[Symbol.hasInstance]()`
 
+### Map 
+
+- `Map`
+
 ### Symbol 
 
 - `Symbol.iterator`
