@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100">
   <style>
-    rect:hover { fill: red; }
+    @keyframes blink {
+      0% { fill: blue; }
+      50% { fill: red; }
+      100% { fill: blue; }
+    }
   </style>
-  <rect width="100" height="100" fill="blue" />
+  <rect width="100" height="100"/>
 </svg>
