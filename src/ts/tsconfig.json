@@ -1,12 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES2023",
-    "lib": ["ES2015.Iterable"],
-    "module": "commonjs",
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
     "types": ["node"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
     "strict": true,
-    "skipLibCheck": true
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
   }
 }

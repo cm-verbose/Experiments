@@ -31,4 +31,5 @@ This directory includes experimenting with TypeScript.
 - `Symbol.iterator`
 
 ### SyntaxError 
+
 - `SyntaxError`
