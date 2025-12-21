@@ -11,6 +11,6 @@ interface Car {
   wheels: number;
 }
 
-type carKeys = keyof Car; // (type) "name" | "seats" | wheels
+type _carKeys = keyof Car; // (type) "name" | "seats" | wheels
 
 export {};
