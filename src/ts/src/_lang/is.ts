@@ -16,7 +16,11 @@ class Car {
 }
 
 function isCar(possibleCar: unknown): possibleCar is Car {
-  return possibleCar instanceof Car && possibleCar.drive !== null && possibleCar.park !== null;
+  return (
+    possibleCar instanceof Car &&
+    possibleCar.drive !== null &&
+    possibleCar.park !== null
+  );
 }
 
 export {};

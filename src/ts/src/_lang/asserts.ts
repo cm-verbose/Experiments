@@ -9,7 +9,9 @@
  * Asserts if a provided value is a number
  * @param value The value to test
  */
-function assertValidNumber<T extends Number>(value: unknown | any): asserts value is NonNullable<T> {
+function assertValidNumber<T extends Number>(
+  value: unknown | any,
+): asserts value is NonNullable<T> {
   if (value === null || value === undefined) {
     throw TypeError("Invalid number");
   }

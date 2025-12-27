@@ -20,7 +20,9 @@ class Car {
    * @param carInstance - F (an instance to check against)
    */
   static [Symbol.hasInstance](carInstance: Car): boolean {
-    let validWheels = carInstance.wheels > this.MIN_WHEELS && carInstance.wheels < this.MAX_WHEELS;
+    let validWheels =
+      carInstance.wheels > this.MIN_WHEELS &&
+      carInstance.wheels < this.MAX_WHEELS;
     return validWheels;
   }
 }

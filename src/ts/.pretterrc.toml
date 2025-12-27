@@ -1,0 +1,16 @@
+arrowParens = "always"
+bracketSpacing = true
+endOfLine = "lf"
+experimentalTernaries = true 
+jsxSingleQuote = false
+htmlWhitespaceSensitivity = "strict"
+objectWrap = "collapse"
+printWidth = 80
+proseWrap = "never"
+quoteProps = "as-needed"
+singleQuote = false
+singleAttributePerLine = "false"
+semi = true
+tabWidth = 2
+trailingCommas = "none"
+useTabs = false

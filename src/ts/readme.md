@@ -1,31 +1,31 @@
-# TypeScript 
+# TypeScript
 
-This directory includes experimenting with TypeScript. 
+This directory includes experimenting with TypeScript and JavaScript.
 
-## Lists of features 
+## Language features
 
-### Language features 
-
-#### TypeScript 
+### TypeScript
 
 - `&` (with types)
-- `asserts ... is ...` 
+- `asserts ... is ...`
 - `... implements ...`
 - `... is ...`
 - `... keyof ...`
 
-### Function
+## Objects and classes
 
-- `Function.prototype[Symbol.hasInstance]()`
+### `Function`
 
-### Map 
+- `Function.prototype[Symbol.hasInstance](other: any)`
+
+### `Map`
 
 - `Map`
 
-### Symbol 
+### `Symbol`
 
 - `Symbol.iterator`
 
-### SyntaxError 
+### SyntaxError
 
 - `SyntaxError`
