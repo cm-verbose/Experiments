@@ -55,16 +55,16 @@ while(iteration_count > 0):
   print(n)
   iteration_count -= 1; 
 
-# range(...) implements __len__() (gets the amount of numbers in this range)
+# range(...) implements __len__() (gets the amount of integers in this range)
 print("length:", len(a)) # 10 
 
 # range(...) implements __reversed__() (reverses the range). For example, this
-# will print numbers 9 to 0:
+# will print integers 9 to 0:
 print("reversed loop (1):")
 for i in reversed(a):
   print(i)
 
-# Note that the reverse() only reverse the range, and does not set the start
+# Note that the reverse() only reverses the range, and does not set the start
 # value to the end of the reversed range. In this case for example, the range
 # does not contain the number 10 as the original only contains the values
 # 0, 2, 4, 6, 8. The reversed range is then: 8, 6, 4, 2, 0. 
