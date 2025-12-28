@@ -1,7 +1,7 @@
 arrowParens = "always"
 bracketSpacing = true
 endOfLine = "lf"
-experimentalTernaries = true 
+experimentalTernaries = true
 jsxSingleQuote = false
 htmlWhitespaceSensitivity = "strict"
 objectWrap = "collapse"

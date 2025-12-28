@@ -1,6 +1,6 @@
 # Python 
 
-This directory contains python code. 
+This directory contains [Python](https://www.python.org) code. 
 
 ## Classes
 
