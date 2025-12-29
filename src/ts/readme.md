@@ -1,6 +1,6 @@
 # TypeScript
 
-This directory includes experimenting with [TypeScript](https://www.typescriptlang.org) and [JavaScript](https://tc39.es/ecma262).
+This directory includes experimenting with [TypeScript](https://www.typescriptlang.org) and [JavaScript](https://tc39.es/ecma262), as TypeScript is a superset of JavaScript. 
 
 ## Language features
 
