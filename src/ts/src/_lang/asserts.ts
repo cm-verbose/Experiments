@@ -1,4 +1,4 @@
-// (typescript)
+// (TypeScript)
 // The asserts keyword is used in functions or methods that want to narrow
 // a certain type to another type.
 //

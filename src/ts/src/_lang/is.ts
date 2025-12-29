@@ -1,4 +1,4 @@
-// (typescript)
+// (TypeScript)
 // The is keyword defines a user-defined type guard.
 //
 // Syntax:

@@ -1,4 +1,4 @@
-// (typescript)
+// (TypeScript)
 // The ampersand operator (&) can be used with TypeScript types to
 // create intersection types.
 

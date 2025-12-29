@@ -1,4 +1,4 @@
-// (typescript)
+// (TypeScript)
 // The "implements" keyword is used to enforce specific fields defined in an
 // interface on a class
 //
