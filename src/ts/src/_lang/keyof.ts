@@ -1,9 +1,16 @@
-// (TypeScript)
-// The keyof operator gets the keys of an object type and joins them as
-// an union of string or number literals
-//
-// Syntax:
-// keyof K
+/**
+ * (TypeScript)
+ * The "keyof" operator obtains the keys to a given type and creates a union of
+ * all keys, as the types of the keys. 
+ * 
+ * Syntax
+ * 
+ * ```ts
+ * keyof T
+ * ```
+ * 
+ * Where `T` is a type with keys. 
+ */
 
 interface Car {
   name: string;
@@ -11,6 +18,11 @@ interface Car {
   wheels: number;
 }
 
-type _carKeys = keyof Car; // (type) "name" | "seats" | wheels
+type CarKeys = keyof Car; // => (type) "name" | "seats" | "wheels"
+
+// This can be used to get an interface's values by accessing the interface
+// using a keyof of that type:
+
+type CarValues = Car[CarKeys]; // => (type) string | number
 
 export {};

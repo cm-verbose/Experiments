@@ -5,7 +5,9 @@
  * optimization.
  * This symbol is a function that returns ArrayIterator<T>.
  */
-Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array]>>(): ArrayIterator<T> {
+Array.prototype[Symbol.iterator] = function <
+  T extends Array<[keyof typeof Array]>,
+>(): ArrayIterator<T> {
   const instance: T[] = this;
   let i = instance.length - 1;
 
@@ -33,7 +35,7 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
 
     // Reimplementing Iterator.filter()
     filter: function* <S extends T>(
-      predicate: (value: T, index: number) => value is S
+      predicate: (value: T, index: number) => value is S,
     ): IteratorObject<S, undefined, T> {
       for (let k = 0; k < instance.length; k++) {
         const item = instance[k] as T;
@@ -44,7 +46,9 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
     },
 
     // Reimplmenting Iterator.map()
-    map: function* <U>(callbackfn: (value: T, index: number) => U): IteratorObject<U, undefined, T> {
+    map: function* <U>(
+      callbackfn: (value: T, index: number) => U,
+    ): IteratorObject<U, undefined, T> {
       for (let k = 0; k < instance.length; k++) {
         yield callbackfn(instance[k] as T, k);
       }
@@ -66,7 +70,10 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
 
     /// Reimplementing Iterator.flatMap()
     flatMap: function* <U>(
-      callback: (value: T, index: number) => Iterator<U, unknown, undefined> | Iterable<U, unknown, undefined>
+      callback: (
+        value: T,
+        index: number,
+      ) => Iterator<U, unknown, undefined> | Iterable<U, unknown, undefined>,
     ): IteratorObject<U, undefined, unknown> {
       for (let k = 0; k < instance.length; k++) {
         const inner = callback(instance[k] as T, k);
@@ -77,7 +84,13 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
     // The following methods should be redefined for performance's sake but
     // this is just a simple example, so we can reuse an array's original
     // code.
-    reduce: function (callbackfn: (previousValue: T, currentValue: T, currentIndex: number) => T): T {
+    reduce: function (
+      callbackfn: (
+        previousValue: T,
+        currentValue: T,
+        currentIndex: number,
+      ) => T,
+    ): T {
       return instance.reduce(callbackfn);
     },
 
@@ -89,7 +102,9 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
       return instance.some(predicate);
     },
 
-    find: function <S extends T>(predicate: (value: T, index: number) => value is S): S | undefined {
+    find: function <S extends T>(
+      predicate: (value: T, index: number) => value is S,
+    ): S | undefined {
       return instance.find(predicate);
     },
 
@@ -115,6 +130,8 @@ Array.prototype[Symbol.iterator] = function <T extends Array<[keyof typeof Array
   return iterator;
 };
 
+/// This loops backwards as we're implicitly calling
+//  Array.prototype[Symbol.iterator]
 for (const a of [1, 2, 3]) {
   console.log(a);
 }

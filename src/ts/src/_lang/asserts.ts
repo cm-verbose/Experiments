@@ -1,26 +1,47 @@
-// (TypeScript)
-// The asserts keyword is used in functions or methods that want to narrow
-// a certain type to another type.
-//
-// Syntax:
-// asssert parameter_name is type
-
 /**
- * Asserts if a provided value is a number
- * @param value The value to test
+ * (TypeScript)
+ * The "asserts" TypeScript keyword defines an assertion function to narrow
+ * down parameters types to some other specified types. The function's return
+ * value is then changed to undefined.
+ *
+ * Syntax
+ *
+ * [in a function's return type declaration]
+ *
+ * ```ts
+ * assert p is T
+ * ```
+ *
+ * Where `p` is asserted to be the type `T`.
+ *
+ * Example
+ * Validating a number
  */
-function assertValidNumber<T extends Number>(
-  value: unknown | any,
-): asserts value is NonNullable<T> {
-  if (value === null || value === undefined) {
-    throw TypeError("Invalid number");
-  }
+function isNumber(a: unknown | any): asserts a is number {
+  let message: string | null = null;
+  switch (true) {
+    case a == null || a == undefined:
+      message = `${a} is null or undefined`;
+      break;
 
-  if (!(value instanceof Number) || Number.isFinite(value)) {
-    throw RangeError("Invalid number");
+    case typeof a != "number":
+      message = `Type of ${a} is not "number"`;
+      break;
+
+    case Number.isNaN(a):
+      message = `${a} is not an instance of a Number`;
+      break;
+  }
+  if (message) {
+    throw new TypeError(message);
   }
 }
 
-assertValidNumber(1);
+// at this point a is unknown
+const a: unknown = 1; 
+isNumber(a);
+
+// passing the assertion, a is now number
+console.log(a + 1);
 
 export {};
