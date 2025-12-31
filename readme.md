@@ -1,6 +1,6 @@
 # Experimentation
 
-A repository to play with features in programming languages.
+A repository to play with programming languages features.
 
 ## Languages 
 
