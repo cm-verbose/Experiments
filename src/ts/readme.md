@@ -27,14 +27,14 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 - `Function.prototype[Symbol.hasInstance](other: any)`
 
-### [Map](./src/Map/)
+### [Map](./src/Map)
 
 - `Map`
 
-### [Symbol](./src/Symbol/)
+### [Symbol](./src/Symbol)
 
 - `Symbol.iterator`
 
-### [SyntaxError](./src/SyntaxError/)
+### [SyntaxError](./src/SyntaxError)
 
 - `SyntaxError`
