@@ -1,6 +1,6 @@
 /**
  * (TypeScript)
- * The "is" keyword defines a user-defined type guard on a function. This
+ * The `is` keyword defines a user-defined type guard on a function. This
  * causes annotated function or method to have a return type of `boolean`
  * and sets a parameter type to a given type T.
  *

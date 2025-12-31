@@ -1,11 +1,10 @@
 /**
  * (TypeScript)
- * The "asserts" TypeScript keyword defines an assertion function to narrow
+ * The `asserts` TypeScript keyword defines an assertion function to narrow
  * down parameters types to some other specified types. The function's return
  * value is then changed to undefined.
  *
  * Syntax
- *
  * [in a function's return type declaration]
  *
  * ```ts

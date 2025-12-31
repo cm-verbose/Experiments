@@ -4,7 +4,7 @@ This directory contains [Python](https://www.python.org) code.
 
 ## Classes
 
-### `range`
+### [range](./src/range/)
 
-- `range(start: int, stop: int, step: int)`
-  - `range(stop: int)`
+- Primary constructor: `range(start: int, stop: int, step: int)`
+- Secondary constructor: `range(stop: int)`

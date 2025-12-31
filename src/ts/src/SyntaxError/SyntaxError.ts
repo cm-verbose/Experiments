@@ -1,10 +1,21 @@
-// A syntax error is an error thrown when the source code has an error relative
-// to its syntax, but it can also be created with the "new" keyword.
+/**
+ * A SyntaxError is an Error representing an error in the syntax of the code.
+ * Although this error is available, it is usually used by a JavaScript engine
+ * and should not be used, unless in specific contexts.
+ *
+ * Signature
+ * new SyntaxError(
+ *  message?: string | undefined, 
+ *  options?: ErrorOptions | undefined
+ * );
+ */
 try {
-  const err = new SyntaxError("some mispelled text");
+  const err = new SyntaxError("Failed to interpret: ...");
   throw err;
 } catch (err) {
-  console.log((err as SyntaxError).message);
+  if (err instanceof SyntaxError) {
+    console.log(err.message);
+  }
 }
 
 export {};

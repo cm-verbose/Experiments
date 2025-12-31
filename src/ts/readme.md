@@ -7,11 +7,11 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 ### TypeScript
 
 - Assertion functions (`asserts p is T`)
-- Type Intersections (`&`)
+- Implementations (`T implements I`)
 - Type Guards (`p is T`)
+- Type Intersections (`&`)
 - Type Keys (`keyof O`)
 - Type Unions (`|`)
-- Implementations (`T implements I`)
 
 ### JavaScript
 
@@ -21,15 +21,15 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [Array](./src/Array)
 
-- `Array.prototype[Symbol.iterator]()`
+- `Array.prototype[Symbol.iterator](): ArrayIterator<T>`
 
 ### [Function](./src/Function)
 
-- `Function.prototype[Symbol.hasInstance](other: any)`
+- `Function.prototype[Symbol.hasInstance](other: any): boolean`
 
 ### [Map](./src/Map)
 
-- `Map`
+- Constructor: `Map<K, V>()`
 
 ### [Symbol](./src/Symbol)
 
@@ -37,4 +37,4 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [SyntaxError](./src/SyntaxError)
 
-- `SyntaxError`
+- Constructor: `SyntaxError`

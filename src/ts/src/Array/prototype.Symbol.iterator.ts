@@ -1,9 +1,9 @@
 /**
- * Array.prototype[Symbol.iterator] represents the prototypical iterator
- * symbol, which is used to change a for(... of ...) loop's behavior. We can
+ * `Array.prototype[Symbol.iterator]` represents the prototypical iterator
+ * symbol, which is used to change a `for(... of ...)` loop's behavior. We can
  * override this iterator like so, but is not recommended due to engine
  * optimization.
- * This symbol is a function that returns ArrayIterator<T>.
+ * This symbol is a function that returns an `ArrayIterator<T>`.
  */
 Array.prototype[Symbol.iterator] = function <
   T extends Array<[keyof typeof Array]>,
