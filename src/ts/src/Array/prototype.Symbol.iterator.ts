@@ -110,10 +110,11 @@ Array.prototype[Symbol.iterator] = function <
 
     [Symbol.toStringTag]: "Array",
 
-    // Overriding the default iteration behavior to loop backwards.
+    // Overriding the default iteration behavior to loop backwards. The 
+    // returned object is either { done: true, value: undefined } or
+    // { done: false, value: T } as defined by IteratorResult<T, undefined>
     next: function (): IteratorResult<T, undefined> {
       if (i < 0) {
-        // Forward boundary check
         return { done: true, value: undefined };
       }
       const current = instance[i];
@@ -121,6 +122,7 @@ Array.prototype[Symbol.iterator] = function <
       return { done: false, value: current as T };
     },
 
+    // NOTE: lib has to be esnext
     [Symbol.dispose]: function (): void {
       if (typeof this.return === "function") {
         this.return();

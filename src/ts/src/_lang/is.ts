@@ -11,7 +11,7 @@
  * p is T
  * ```
  * 
- * where `p` is the parameter to test against the type guard defined by the
+ * Where `p` is the parameter to test against the type guard defined by the
  * function.
  */
 
