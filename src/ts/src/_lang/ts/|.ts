@@ -1,15 +1,15 @@
 /**
  * (TypeScript)
- * The vertical line operator (|) in TypeScript indicates a type union on types 
- * (| also represents the bitwise OR operator for numbers). A union allows only 
+ * The vertical line operator (|) in TypeScript indicates a type union on types
+ * (| also represents the bitwise OR operator for numbers). A union allows only
  * the defined types in its definition.
  *
  * Syntax
- * 
+ *
  * ```ts
  * A | B | C | ... | N
  * ```
- * 
+ *
  * Where `A`, `B`, `C`, ..., `N` are types.
  *
  * Example

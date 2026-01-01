@@ -110,7 +110,7 @@ Array.prototype[Symbol.iterator] = function <
 
     [Symbol.toStringTag]: "Array",
 
-    // Overriding the default iteration behavior to loop backwards. The 
+    // Overriding the default iteration behavior to loop backwards. The
     // returned object is either { done: true, value: undefined } or
     // { done: false, value: T } as defined by IteratorResult<T, undefined>
     next: function (): IteratorResult<T, undefined> {

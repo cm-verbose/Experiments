@@ -37,7 +37,7 @@ function isNumber(a: unknown | any): asserts a is number {
 }
 
 // at this point a is unknown
-const a: unknown = 1; 
+const a: unknown = 1;
 isNumber(a);
 
 // passing the assertion, a is now number

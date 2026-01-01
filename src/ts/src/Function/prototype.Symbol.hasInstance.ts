@@ -1,11 +1,11 @@
 /**
- * `Function.prototype[Symbol.hasInstance]` represents the prototypical 
- * operation `O instanceof C`, where `O` is a value, often an object, and `C` a 
- * function, or, more often, a class (as a class is a function). This operations 
+ * `Function.prototype[Symbol.hasInstance]` represents the prototypical
+ * operation `O instanceof C`, where `O` is a value, often an object, and `C` a
+ * function, or, more often, a class (as a class is a function). This operations
  * can also be used on other objects.
  *
  * Signature
- * 
+ *
  * ```ts
  * [Symbol.hasInstance](other: any): boolean;
  * ```

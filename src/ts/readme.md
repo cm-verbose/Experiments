@@ -4,16 +4,21 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ## [Language features](./src/_lang)
 
-### TypeScript
+### [TypeScript](./src/_lang/ts)
 
-- Assertion functions (`asserts p is T`)
-- Implementations (`T implements I`)
-- Type Guards (`p is T`)
-- Type Intersections (`&`)
-- Type Keys (`keyof O`)
-- Type Unions (`|`)
+- Assertion function (`asserts p is T`)
+- Constant type assertion (`<const> V`, `V as const`)
+- Implementation (`T implements I`)
+- Type assertion (`V as T`)
+- Type guard (`p is T`)
+- Type intersection (`A & B`)
+- Type keys (`keyof O`)
+- Type union (`A | B`)
+- Utility types:
+  - Nullish value exclusion (`NonNullable<T>`)
+  - String type uppercase transform (`Uppercase<S>`)
 
-### JavaScript
+### [JavaScript](./src/_lang/js)
 
 - `new.target`
 

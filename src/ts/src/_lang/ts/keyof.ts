@@ -1,15 +1,15 @@
 /**
  * (TypeScript)
  * The `keyof` operator obtains the keys to a given type and creates a union of
- * all keys, as the types of the keys. 
- * 
+ * all keys, as the types of the keys.
+ *
  * Syntax
- * 
+ *
  * ```ts
  * keyof T
  * ```
- * 
- * Where `T` is a type with keys. 
+ *
+ * Where `T` is a type with keys.
  */
 
 interface Car {

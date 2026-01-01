@@ -1,15 +1,15 @@
 /**
  * (TypeScript)
- * The `implements` keyword is used to indicate that a type implements given 
- * attributes usually from an interface or other type. This allows for 
+ * The `implements` keyword is used to indicate that a type implements given
+ * attributes usually from an interface or other type. This allows for
  * polymorhism when working with types that all implement a common interface.
- * 
+ *
  * Syntax
- * 
+ *
  * ```ts
  * T implements I
  * ```
- * 
+ *
  * Where `T` is an Object that implements the attributes defined in a type `I`,
  * usually an interface.
  */

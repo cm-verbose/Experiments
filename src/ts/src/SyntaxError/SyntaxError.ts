@@ -5,7 +5,7 @@
  *
  * Signature
  * new SyntaxError(
- *  message?: string | undefined, 
+ *  message?: string | undefined,
  *  options?: ErrorOptions | undefined
  * );
  */

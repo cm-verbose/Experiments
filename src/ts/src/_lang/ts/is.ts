@@ -6,11 +6,11 @@
  *
  * Syntax
  * [in a function's return type declaration]
- * 
+ *
  * ```ts
  * p is T
  * ```
- * 
+ *
  * Where `p` is the parameter to test against the type guard defined by the
  * function.
  */

@@ -1,14 +1,15 @@
 /**
  * (TypeScript)
- * The ampersand operator (&) in TypeScript when used on types (& also 
- * represents the bitwise AND operator for numbers), creates interesction 
+ * The ampersand operator (&) in TypeScript when used on types (& also
+ * represents the bitwise AND operator for numbers), creates interesction
  * types, or types that satisfy both interface definitions.
  *
  * Syntax
- * 
+ *
  * ```ts
  * A & B & C & ... & N
  * ```
+ *
  * Where `A`, `B`, `C`, ..., `N` are types.
  */
 interface A {
