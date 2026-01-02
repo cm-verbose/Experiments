@@ -2,7 +2,7 @@
  * (TypeScript)
  * `NonNullable<T>` is an utility type used to make a given type `T` exclude
  * the values null or undefined. This type is useful for specifying that a
- * value must exist before existing.
+ * value must exist before usage.
  *
  * Signature
  *

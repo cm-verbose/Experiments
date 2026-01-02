@@ -1,7 +1,7 @@
 /**
  * (TypeScript)
- * `Uppercase<S>` is an utility type that capitalizes a given string type to
- * it's capitalized version.
+ * `Uppercase<S>` is an utility type that converts all characters in the string
+ * type to an uppercase letter.
  *
  * Syntax
  *

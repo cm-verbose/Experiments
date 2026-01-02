@@ -16,6 +16,7 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 - Type union (`A | B`)
 - Utility types:
   - Nullish value exclusion (`NonNullable<T>`)
+  - String type lowercase transform (`Lowercase<S>`)
   - String type uppercase transform (`Uppercase<S>`)
 
 ### [JavaScript](./src/_lang/js)
