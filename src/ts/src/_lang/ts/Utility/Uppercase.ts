@@ -12,7 +12,7 @@
  * Where `S` is a given string type (`S extends string`).
  *
  * Example
- * Let's captalize a random string:
+ * Let's capitalize a random string:
  */
 type UpperAlpha = Uppercase<"abc">; // => (type) "ABC"
 
