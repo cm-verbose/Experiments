@@ -4,10 +4,13 @@
  * and should not be used, unless in specific contexts.
  *
  * Signature
+ *
+ * ```ts
  * new SyntaxError(
- *  message?: string | undefined,
- *  options?: ErrorOptions | undefined
+ *  message?: string,
+ *  options?: ErrorOptions
  * );
+ * ```
  */
 try {
   const err = new SyntaxError("Failed to interpret: ...");

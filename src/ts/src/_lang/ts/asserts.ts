@@ -14,7 +14,7 @@
  * Where `p` is asserted to be the type `T`.
  *
  * Example
- * Validating a number
+ * Validating a `number`
  */
 function isNumber(a: unknown | any): asserts a is number {
   let message: string | null = null;

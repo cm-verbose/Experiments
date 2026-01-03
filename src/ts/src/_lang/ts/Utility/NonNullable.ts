@@ -1,7 +1,7 @@
 /**
  * (TypeScript)
  * `NonNullable<T>` is an utility type used to make a given type `T` exclude
- * the values null or undefined. This type is useful for specifying that a
+ * the values `null` or `undefined`. This type is useful for specifying that a
  * value must exist before usage.
  *
  * Signature
@@ -21,7 +21,7 @@ function logText(text: NonNullText) {
   console.log(text);
 }
 
-// Notice that null and undefined cannot be used here
+// Notice that `null` and `undefined` cannot be used here
 logText("Hello");
 
 export {};

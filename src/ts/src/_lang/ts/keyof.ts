@@ -21,7 +21,7 @@ interface Car {
 type CarKeys = keyof Car; // => (type) "name" | "seats" | "wheels"
 
 // This can be used to get an interface's values by accessing the interface
-// using a keyof of that type:
+// using a `keyof` of that type:
 
 type CarValues = Car[CarKeys]; // => (type) string | number
 

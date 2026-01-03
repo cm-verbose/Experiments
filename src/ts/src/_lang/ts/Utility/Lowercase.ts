@@ -12,7 +12,7 @@
  * Where `S` is a given string type (`S extends string`).
  *
  * Example
- * Let's lowercase a random string:
+ * Let's lowercase a random `string`:
  */
 type lowered = Lowercase<"AbC">; // (type) => "abc"
 

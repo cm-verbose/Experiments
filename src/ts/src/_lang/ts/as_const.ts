@@ -28,7 +28,7 @@ function logPort(port: typeof PORT) {
 
 // Notice that no value other than `5500` can be used in this context as we
 // assume the constant value of PORT as being `5500`. The value cannot change
-// as per the documentation of JavaScript, so this assumption is fair.
+// as per the definition of const.
 logPort(5500);
 
 const IP_SEGMENTS = <const>[192, 168, 0, 0];
@@ -53,6 +53,6 @@ const IP_SEGMENTS = <const>[192, 168, 0, 0];
 // const a = (1 + 1) as const;
 // ```
 //
-// will err as (1 + 1) is not a literal value, but 2 is.
+// will err as `(1 + 1)` is not a literal value, but `2` is.
 
 export {};

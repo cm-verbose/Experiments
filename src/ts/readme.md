@@ -9,6 +9,7 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 - Assertion function (`asserts p is T`)
 - Constant type assertion (`<const> V`, `V as const`)
 - Implementation (`T implements I`)
+- Optional types (`P?: T`, `{ P?: T }`)
 - Type assertion (`V as T`)
 - Type guard (`p is T`)
 - Type intersection (`A & B`)
@@ -27,11 +28,12 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [Array](./src/Array)
 
-- `Array.prototype[Symbol.iterator](): ArrayIterator<T>`
+- Pushing: `Array<T>.prototype.push(...items: T[]);`
+- `Array.prototype[Symbol.iterator](): ArrayIterator<T>;`
 
 ### [Function](./src/Function)
 
-- `Function.prototype[Symbol.hasInstance](other: any): boolean`
+- `Function.prototype[Symbol.hasInstance](other: any): boolean;`
 
 ### [Map](./src/Map)
 

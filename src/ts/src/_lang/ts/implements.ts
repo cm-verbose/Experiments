@@ -17,8 +17,8 @@ interface Vehicle {
   wheels: number;
 }
 
-// Here the class Car must have the field "wheels", or an error will be shown,
-// because it implements the interface Vehicle.
+// Here the class `Car` must have the field "wheels", or an error will be
+// shown, because it implements the interface Vehicle.
 class Car implements Vehicle {
   wheels: number;
 

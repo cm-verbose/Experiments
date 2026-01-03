@@ -16,10 +16,10 @@ Array.prototype[Symbol.iterator] = function <
       return this;
     },
 
-    // Reimplementing Iterator.drop() Note that using a for(... of ...) loop
-    // will call the Symbol.iterator here. If custom logic is defined in next()
-    // it is best to avoid using these types of loops as it would trigger the
-    // custom implementation.
+    // Reimplementing `Iterator.drop()` Note that using a `for(... of ...)` loop
+    // will call the `Symbol.iterator here`. If custom logic is defined in
+    // `next()` it is best to avoid using these types of loops as it would
+    // trigger the custom implementation.
     drop: function* (count: number): IteratorObject<T, undefined, unknown> {
       let toDrop = Math.max(0, count);
 
@@ -28,12 +28,12 @@ Array.prototype[Symbol.iterator] = function <
       }
     },
 
-    /// Reimplementing Iterator.every() using the array's every.
+    /// Reimplementing `Iterator.every()` using the array's every.
     every: function (predicate: (value: T, index: number) => unknown): boolean {
       return instance.every(predicate);
     },
 
-    // Reimplementing Iterator.filter()
+    // Reimplementing `Iterator.filter()`
     filter: function* <S extends T>(
       predicate: (value: T, index: number) => value is S,
     ): IteratorObject<S, undefined, T> {
@@ -45,7 +45,7 @@ Array.prototype[Symbol.iterator] = function <
       }
     },
 
-    // Reimplmenting Iterator.map()
+    // Reimplmenting `Iterator.map()`
     map: function* <U>(
       callbackfn: (value: T, index: number) => U,
     ): IteratorObject<U, undefined, T> {
@@ -54,7 +54,7 @@ Array.prototype[Symbol.iterator] = function <
       }
     },
 
-    // Reimplementing Iterator.take()
+    // Reimplementing `Iterator.take()`
     take: function* (limit: number): IteratorObject<T, undefined, unknown> {
       if (limit == 0) return;
 
@@ -63,12 +63,12 @@ Array.prototype[Symbol.iterator] = function <
       }
     },
 
-    /// Reimplementing Iterator.toArray()
+    /// Reimplementing `Iterator.toArray()`
     toArray: function (): T[] {
       return [...this];
     },
 
-    /// Reimplementing Iterator.flatMap()
+    /// Reimplementing `Iterator.flatMap()`
     flatMap: function* <U>(
       callback: (
         value: T,
@@ -111,8 +111,8 @@ Array.prototype[Symbol.iterator] = function <
     [Symbol.toStringTag]: "Array",
 
     // Overriding the default iteration behavior to loop backwards. The
-    // returned object is either { done: true, value: undefined } or
-    // { done: false, value: T } as defined by IteratorResult<T, undefined>
+    // returned object is either `{ done: true, value: undefined }` or
+    // `{ done: false, value: T }` as defined by `IteratorResult<T, undefined>`
     next: function (): IteratorResult<T, undefined> {
       if (i < 0) {
         return { done: true, value: undefined };
@@ -133,7 +133,7 @@ Array.prototype[Symbol.iterator] = function <
 };
 
 /// This loops backwards as we're implicitly calling
-//  Array.prototype[Symbol.iterator]
+//  `Array.prototype[Symbol.iterator]`
 for (const a of [1, 2, 3]) {
   console.log(a);
 }

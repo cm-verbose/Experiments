@@ -1,4 +1,4 @@
-// Defines custom behavior for the for(...of...) loop
+// Defines custom behavior for the `for(...of...)` loop
 class MyIterable {
   *[Symbol.iterator]() {
     yield 1;
@@ -13,7 +13,7 @@ const iterable = new MyIterable();
 // 1
 // 2
 // 3
-// because of the *[Symbol.iterator] generator.
+// because of the `*[Symbol.iterator]` generator.
 for (const it of iterable) {
   console.log(it);
 }
