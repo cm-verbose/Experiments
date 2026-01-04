@@ -12,6 +12,7 @@
  * );
  * ```
  */
+
 try {
   const err = new SyntaxError("Failed to interpret: ...");
   throw err;

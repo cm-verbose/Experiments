@@ -6,5 +6,6 @@ This directory contains [Python](https://www.python.org) code.
 
 ### [range](./src/range/)
 
-- Primary constructor: `range(start: int, stop: int, step: int)`
-- Secondary constructor: `range(stop: int)`
+- Constructors:
+  - `range(start: int, stop: int, step: int)`
+  - `range(stop: int)`

@@ -14,6 +14,7 @@
  * Example
  * Let's capitalize a random `string`:
  */
+
 type UpperAlpha = Uppercase<"abc">; // => (type) "ABC"
 
 /**

@@ -16,6 +16,7 @@
  * Example
  * Validating a `number`
  */
+
 function isNumber(a: unknown | any): asserts a is number {
   let message: string | null = null;
   switch (true) {

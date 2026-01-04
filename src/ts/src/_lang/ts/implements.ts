@@ -13,6 +13,7 @@
  * Where `T` is an Object that implements the attributes defined in a type `I`,
  * usually an interface.
  */
+
 interface Vehicle {
   wheels: number;
 }

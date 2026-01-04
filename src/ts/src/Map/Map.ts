@@ -2,6 +2,7 @@
  * A map allows to create a key-value pair while remembering the insertion
  * order. The value may be an object.
  */
+
 const values: Record<string, number> = {
   a: 1,
   b: 2,

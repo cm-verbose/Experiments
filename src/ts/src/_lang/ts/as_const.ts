@@ -20,6 +20,7 @@
  * way of annotating constant assertion is most common, but the second can be
  * used when the type is particularly long.
  */
+
 const PORT = 5500 as const;
 
 function logPort(port: typeof PORT) {

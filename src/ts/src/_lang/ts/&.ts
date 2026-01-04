@@ -12,6 +12,7 @@
  *
  * Where `A`, `B`, `C`, ..., `N` are types.
  */
+
 interface A {
   fieldA: number;
 }

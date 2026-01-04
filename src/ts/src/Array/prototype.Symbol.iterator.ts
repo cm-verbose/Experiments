@@ -5,6 +5,7 @@
  * optimization.
  * This symbol is a function that returns an `ArrayIterator<T>`.
  */
+
 Array.prototype[Symbol.iterator] = function <
   T extends Array<[keyof typeof Array]>,
 >(): ArrayIterator<T> {

@@ -13,6 +13,7 @@
  * `other` is the object on the left side of the `instanceof` operator, or the
  * object to test.
  */
+
 class Vehicle {
   constructor() {}
 

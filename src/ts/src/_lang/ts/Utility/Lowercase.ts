@@ -14,6 +14,7 @@
  * Example
  * Let's lowercase a random `string`:
  */
+
 type lowered = Lowercase<"AbC">; // (type) => "abc"
 
 export {};

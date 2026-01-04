@@ -22,18 +22,30 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [JavaScript](./src/_lang/js)
 
-- `new.target`
+- Class meta-property (`new.target`)
 
 ## Objects and classes
 
 ### [Array](./src/Array)
 
-- Pushing: `Array<T>.prototype.push(...items: T[]);`
-- `Array.prototype[Symbol.iterator](): ArrayIterator<T>;`
+- Constructors:
+  - `new (arrayLength?: number): any[];`
+  - `new<T>(arrayLength?: number): T[];`
+  - `new<T>(...items:T[]): T[];`
+
+- Call signatures:
+  - `(arrayLength?: number): any[];`
+  - `<T>(arrayLength: number): T[];`
+  - `<T>(...items: T[]): T[];`
+
+- Prototype:
+  - Pushing: `Array<T>.prototype.push(...items: T[]);`
+  - Iterator Symbol: `Array<T>.prototype[Symbol.iterator](): ArrayIterator<T>;`
 
 ### [Function](./src/Function)
 
-- `Function.prototype[Symbol.hasInstance](other: any): boolean;`
+- Prototype:
+  - Instanceof Symbol: `Function.prototype[Symbol.hasInstance](other: any): boolean;`
 
 ### [Map](./src/Map)
 
@@ -45,4 +57,8 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [SyntaxError](./src/SyntaxError)
 
-- Constructor: `SyntaxError`
+- Constructor: 
+  - `new SyntaxError(message? string, options?: ErrorOptions)`
+
+- Call signature:
+  - `SyntaxError(message? string, options?: ErrorOptions)`
