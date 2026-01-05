@@ -3,7 +3,7 @@
  * `Uppercase<S>` is an utility type that converts all characters in the string
  * type to an uppercase letter.
  *
- * Syntax
+ * Signature
  *
  * ```ts
  * Uppercase<S>

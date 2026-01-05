@@ -17,8 +17,10 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 - Type union (`A | B`)
 - Utility types:
   - Nullish value exclusion (`NonNullable<T>`)
-  - String type lowercase transform (`Lowercase<S>`)
-  - String type uppercase transform (`Uppercase<S>`)
+  - Picking (`Pick<T, K extends keyof T>`)
+  - String type lowercase transform (`Lowercase<S extends string>`)
+  - String type uppercase transform (`Uppercase<S extends string>`)
+  - Type omission (`Omit<T, K extends keyof any>`)
 
 ### [JavaScript](./src/_lang/js)
 

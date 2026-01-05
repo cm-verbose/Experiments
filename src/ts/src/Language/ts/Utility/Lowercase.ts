@@ -3,7 +3,7 @@
  * `Lowercase<S>` is an utility type that converts all characters in the string
  * type to a lowercase letter.
  *
- * Syntax
+ * Signature
  *
  * ```ts
  * Lowercase<S>
