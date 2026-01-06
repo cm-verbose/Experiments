@@ -38,36 +38,36 @@ console.log("a: ", a, a.length);
 const b = new Array<number>(4);
 console.log("b: ", b, b.length);
 
-// Now our array contains the elements `"Hello"` and `"World"`. 
+// Now our array contains the elements `"Hello"` and `"World"`.
 const message: string[] = new Array("Hello", "World");
 console.log("c: ", message, message.length);
 
 /**
  * An `Array` can also be created with the call signature of `Array`, as it
  * defines multiple ways of creating an `Array` directly.
- * 
+ *
  * Call Signatures
- * 
+ *
  * ```ts
  * (arrayLength?: number): any[];
  * ```
- * 
+ *
  * Where `arrayLength` is a positive integer that is smaller than 2^32. This
  * is equivalent to the contructor with the same given parameters.
- * 
+ *
  * ```ts
  * <T>(arrayLength: number): T[];
  * ```
- * 
+ *
  * Where `arrayLength` is a positive integer that is smaller than 2^32. This
  * is equivalent to the constructor with the same given parameters.
- * 
+ *
  * ```ts
  * <T>(...items: T[]): T[];
  * ```
- * 
+ *
  * Where `...items` are the given items to be added to the `Array`, This is
- * equivalent to the constructor with the same given parameters. 
+ * equivalent to the constructor with the same given parameters.
  */
 
 // Let's create an `Array` with its call signature
@@ -83,4 +83,4 @@ console.log("b1: ", b1, b1.length);
 const message1 = Array("Hello", "World");
 console.log("message1: ", message1, message1.length);
 
-export {}
+export {};

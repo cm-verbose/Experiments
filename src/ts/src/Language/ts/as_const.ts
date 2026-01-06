@@ -44,7 +44,7 @@ const IP_SEGMENTS = <const>[192, 168, 0, 0];
 // - `string` literals
 // - `number` literals
 // - `boolean` literals
-// - `arrays` with literal values
+// - `Array` literals with literal values
 // - `Object` literals
 //
 // Any non simple value (as being evaluated or not directly written) cannot be

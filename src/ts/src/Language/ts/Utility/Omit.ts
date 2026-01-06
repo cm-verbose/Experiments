@@ -11,7 +11,7 @@
  *
  * Where `T` is the given type where the key `K` is being removed from. In this
  * context, `K` extends `keyof any`, as the keys of a type `T` can be described
- * in many different ways. Many keys can be specified with a union of key 
+ * in many different ways. Many keys can be specified with a union of key
  * values.
  *
  * Example
@@ -37,7 +37,7 @@ function createUser(user: UserCreation) {
 }
 
 // The keys `id` and `uid` have been removed from the user creation object,
-// because `Omit<T, K>` with `"id" | "uid"` omits both keys. 
+// because `Omit<T, K>` with `"id" | "uid"` omits both keys.
 createUser({
   name: "Paul",
 });

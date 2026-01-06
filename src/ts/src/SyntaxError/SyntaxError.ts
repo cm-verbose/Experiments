@@ -1,7 +1,8 @@
 /**
- * A SyntaxError is an Error representing an error in the syntax of the code.
+ * A SyntaxError is an `Error` representing an error in the syntax of the code.
  * Although this error is available, it is usually used by a JavaScript engine
- * and should not be used, unless in specific contexts.
+ * and should not be used, unless in specific contexts. `SyntaxError` is
+ * considered a native error.
  *
  * Signature
  *

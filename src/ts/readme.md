@@ -2,9 +2,9 @@
 
 This directory includes experimenting with [TypeScript](https://www.typescriptlang.org) and [JavaScript](https://tc39.es/ecma262), as TypeScript is a superset of JavaScript.
 
-## [Language features](./src/_lang)
+## [Language features](./src/Language)
 
-### [TypeScript](./src/_lang/ts)
+### [TypeScript](./src/Language/ts)
 
 - Assertion function (`asserts p is T`)
 - Constant type assertion (`<const> V`, `V as const`)
@@ -22,7 +22,7 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
   - String type uppercase transform (`Uppercase<S extends string>`)
   - Type omission (`Omit<T, K extends keyof any>`)
 
-### [JavaScript](./src/_lang/js)
+### [JavaScript](./src/Language/js)
 
 - Class meta-property (`new.target`)
 
@@ -44,6 +44,12 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
   - Pushing: `Array<T>.prototype.push(...items: T[]);`
   - Iterator Symbol: `Array<T>.prototype[Symbol.iterator](): ArrayIterator<T>;`
 
+### [Error](./src/Error)
+
+- Constructors
+  - `new (message?: string, options?: ErrorOptions): Error;`
+  - `(message?: string, options?: ErrorOptions): Error;`
+
 ### [Function](./src/Function)
 
 - Prototype:
@@ -59,7 +65,7 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [SyntaxError](./src/SyntaxError)
 
-- Constructor: 
+- Constructor:
   - `new SyntaxError(message? string, options?: ErrorOptions)`
 
 - Call signature:
