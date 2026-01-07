@@ -36,7 +36,9 @@ const IP_SEGMENTS = <const>[192, 168, 0, 0];
 
 // For objects such as arrays with keys, their values are marked as `readonly`
 // and thereof cannot be reassigned. Hence trying to run:
+// ```ts
 // IP_SEGMENTS[0] = 1
+// ```
 // Will cause an error because readonly keys cannot be modified.
 
 // Futhermore, constant assertions can only be applied to :

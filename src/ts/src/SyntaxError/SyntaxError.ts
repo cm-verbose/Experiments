@@ -4,14 +4,26 @@
  * and should not be used, unless in specific contexts. `SyntaxError` is
  * considered a native error.
  *
- * Signature
+ * Constructor Signature
  *
  * ```ts
- * new SyntaxError(
- *  message?: string,
- *  options?: ErrorOptions
- * );
+ * new(message?: string, options?: ErrorOptions);
  * ```
+ *
+ * Where `message` is a `message` and `options` are equivalent to `Error`'s
+ * message and option parameters.
+ *
+ * Call Signatures
+ *
+ * ```ts
+ * (message?: string, options?: ErrorOptions);
+ * ```
+ *
+ * This call signature is equivalent to the constructor with the same defined
+ * parameters.
+ *
+ * Example
+ * Using a `SyntaxError` in code
  */
 
 try {

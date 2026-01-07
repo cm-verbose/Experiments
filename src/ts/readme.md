@@ -41,6 +41,7 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
   - `<T>(...items: T[]): T[];`
 
 - Prototype:
+  - Popping: `Array<T>.prototype.pop(): T | undefined;`
   - Pushing: `Array<T>.prototype.push(...items: T[]);`
   - Iterator Symbol: `Array<T>.prototype[Symbol.iterator](): ArrayIterator<T>;`
 
@@ -57,7 +58,10 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [Map](./src/Map)
 
-- Constructor: `Map<K, V>()`
+- Constructors:
+  - `new(): Map<any, any>`
+  - `new <K, V>(entries?: readonly (readonly [K, V])[] | null): Map<K, V>;`
+  - `new <K, V>(iterable?: Iterable<readonly [K, V]> | null): Map<K, V>;`
 
 ### [Symbol](./src/Symbol)
 

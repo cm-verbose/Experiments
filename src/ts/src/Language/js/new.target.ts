@@ -12,7 +12,8 @@
 
 class Example {
   constructor() {
-    console.log(new.target == Example);
+    const target: typeof Example = new.target;
+    console.log(target == Example);
   }
 }
 

@@ -17,7 +17,7 @@
 class Vehicle {
   constructor() {}
 
-  /// Example methods
+  /// Example method
   drive() {
     console.log("Drive (Vehicle)");
   }

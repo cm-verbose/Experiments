@@ -1,6 +1,6 @@
 /**
  * `Error` represents unrecoverable errors (SyntaxError, TypeError etc.) and
- * user-defined exceptions that are defined at run time. This class can be
+ * user-defined exceptions that are handled at run time. This class can be
  * extended to create custom errors.
  *
  * Constructor Signature

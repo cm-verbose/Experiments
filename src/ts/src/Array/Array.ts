@@ -2,20 +2,20 @@
  * An `Array` is a dynamic array that contains elements of a given type.
  * TypeScript enforces every `Array` to have the same data type, but `any` can
  * be used as an array type to contain multiple types within the same array.
- * Arrays are 0-indexed and can also be negatively indexed (an index of -1
+ * `Array`s are 0-indexed and can also be negatively indexed (an index of -1
  * returns the last element of the given array).
  *
  * Constructor Signatures
  *
  * ```ts
- * new (arrayLength?: number): any[]
+ * new (arrayLength?: number): any[];
  * ```
  *
  * Where `arrayLength` is a positive integer, that is smaller than 2^32. This
  * constructor creates an array which elements are of the `any` type.
  *
  * ```ts
- * new<T>(arrayLength?: number): T[]
+ * new<T>(arrayLength?: number): T[];
  * ```
  *
  * Where `arrayLength` is a positive integer, that is smaller than 2^32. This
@@ -23,7 +23,7 @@
  * type.
  *
  * ```ts
- * new<T>(...items:T[]): T[]
+ * new<T>(...items:T[]): T[];
  * ```
  *
  * Where `...items` are the given items to be added to the array.
