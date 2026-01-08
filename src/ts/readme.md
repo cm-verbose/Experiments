@@ -42,7 +42,8 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 - Prototype:
   - Popping: `Array<T>.prototype.pop(): T | undefined;`
-  - Pushing: `Array<T>.prototype.push(...items: T[]);`
+  - Pushing: `Array<T>.prototype.push(...items: T[]): number;`
+  - Unshift: `Array<T>.prototype.unshift(...items:T[]): number;`
   - Iterator Symbol: `Array<T>.prototype[Symbol.iterator](): ArrayIterator<T>;`
 
 ### [Error](./src/Error)
