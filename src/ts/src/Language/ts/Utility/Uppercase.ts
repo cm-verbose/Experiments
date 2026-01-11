@@ -21,7 +21,7 @@ type UpperAlpha = Uppercase<"abc">; // => (type) "ABC"
  * The capitalization used seem to be using a Unicode character's Unicode
  * `Uppercase_Mapping` property to compute the values. Hence, with some special
  * characters such as "ß" - `00DF` LATIN SMALL LETTER SHARP S, the result is not
- * "ẞ" `1E9E` LATIN CAPITAL LETTER SHARP S, since the `Uppercase_Mapping` for
+ * `"ẞ"` `1E9E` LATIN CAPITAL LETTER SHARP S, since the `Uppercase_Mapping` for
  * this character is `"SS"`.
  */
 

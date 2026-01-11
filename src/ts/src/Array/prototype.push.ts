@@ -1,7 +1,7 @@
 /**
  * `push()` Adds one or more elements at the end of an `Array` and returns the
- * length of the modified `Array`. 
- * 
+ * length of the modified `Array`.
+ *
  * Signature
  *
  * ```ts

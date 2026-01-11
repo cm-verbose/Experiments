@@ -1,8 +1,14 @@
 /**
  * `[Symbol.iterator]` defines iterable behavior to an existing `Object`. The
  * corresponding value of this key on an object is called by the semantics of
- * the `for(... of ...)` loop, and represents the default iterator. Other 
+ * the `for(... of ...)` loop, and represents the default iterator. Other
  * language features also depend on `[Symbol.iterator]`.
+ *
+ * Signature
+ *
+ * ```
+ * [Symbol.iterator](): T
+ * ```
  *
  * Example
  * Let's define a custom iterable class:
@@ -31,7 +37,7 @@ const map = new ArrayMap([
 ]);
 
 // Here we are iterating through the IterableIterator<[K, V]>, which gives us
-// many [K, V] arrays that we can manipulate later. 
-for (const v of map) {
+// many [K, V] arrays that we can manipulate later.
+for (const v of map[Symbol.iterator]()) {
   console.log(v);
 }

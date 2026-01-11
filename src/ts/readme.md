@@ -10,6 +10,8 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 - Constant type assertion (`<const> V`, `V as const`)
 - Implementation (`T implements I`)
 - Optional types (`P?: T`, `{ P?: T }`)
+- Primitive types
+  - Numbers: `number`
 - Type assertion (`V as T`)
 - Type guard (`p is T`)
 - Type intersection (`A & B`)
@@ -66,12 +68,13 @@ This directory includes experimenting with [TypeScript](https://www.typescriptla
 
 ### [Symbol](./src/Symbol)
 
-- `Symbol.iterator`
+- Instance Symbol: `[Symbol.hasInstance](other: any): other is T;`
+- Iteration Symbol: `[Symbol.iterator](): T;`
 
 ### [SyntaxError](./src/SyntaxError)
 
 - Constructor:
-  - `new SyntaxError(message? string, options?: ErrorOptions)`
+  - `new SyntaxError(message? string, options?: ErrorOptions);`
 
 - Call signature:
-  - `SyntaxError(message? string, options?: ErrorOptions)`
+  - `SyntaxError(message? string, options?: ErrorOptions);`

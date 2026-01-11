@@ -9,7 +9,7 @@
  * ```
  *
  * Where `T` is the given type of the elements in `Array<T>`. The returned
- * element is `undefined` if there are no elements and is of type `T` 
+ * element is `undefined` if there are no elements and is of type `T`
  * otherwise.
  */
 
